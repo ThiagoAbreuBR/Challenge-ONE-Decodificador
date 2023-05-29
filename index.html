@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1><img src="img/logo.png" alt="Logo Alura"></h1>
+  </header>
+
+  <main>
+
+    <div class="containerCaixaTexto">
+      <textarea name="" id="caixaTexto" cols="50" rows="20" placeholder="Digite seu texto"></textarea>
+      <p><img src="img/alerta.png" alt=""> Apenas letras minúsculas e sem acento.</p>
+
+      <div class="btnCriptografarDescriptografar">
+        <button class="btnCriptografar" onclick="exibirTextoCriptografado()">Criptografar</button>
+        <button class="btnDescriptografar" onclick="exibirTextoDescriptografado()">Descriptografar</button>
+      </div>
+
+    </div>
+
+    <div class="containerCriptografiaDescriptografia">
+
+      <div class="caixaCriptografiaDescriptografia">
+        <img id="imgTexto" src="img/procurandoTexto.svg" alt="">
+        <p id="mensagemVazia"></p>
+        <p id="digiteTexto">Digite um texto que você deseja criptografar ou descriptografar</p>
+        <p id="textoCriptogradoDescriptografado"></p>
+        <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+         <p id="copiandoTexto"></p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
